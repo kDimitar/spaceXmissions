@@ -27,9 +27,9 @@ const NavBar = () => {
     const navRef = useRef(null);
 
     const {data, loading, error} = useQuery(GET_ROCKET_INFO)
-    
-    if({error}) return <div > <h3>{error.message} </h3>  </div>
     if (loading) return <div ><p>🚀 ITS LOADING</p></div>
+    if(error) return <div error = {error.message}> <h3> </h3>  </div>
+    
 
 
     return     (
@@ -37,7 +37,7 @@ const NavBar = () => {
         <div>
             <Menu  rockets = {data.rockets}/>
 
-            
+
         </div>
     </div>
     )

@@ -51,3 +51,5 @@ const spaceXLogo = () => (
         </Link>
     </div>
 );
+
+export default spaceXLogo
