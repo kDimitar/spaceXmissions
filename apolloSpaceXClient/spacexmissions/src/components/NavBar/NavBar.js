@@ -36,6 +36,8 @@ const NavBar = () => {
     <div className ='' ref={navRef}>
         <div>
             <Menu  rockets = {data.rockets}/>
+
+            
         </div>
     </div>
     )
